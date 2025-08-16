@@ -1,0 +1,139 @@
+Short answer: do a **pilot**, then size $n$ from the variance you observe. Expect **\~12–36 sessions** to get tight, defensible estimates; **\~16** is a practical minimum, **\~30–40** is a gold standard if you want very tight CIs.
+
+Here’s the scientific way to choose $n$ for repeating your “vibe coding” on the same project:
+
+# 1) Decide what you’re measuring
+
+Pick objective scores per session (automate as much as possible):
+
+* **Quality:** tests passed, lints/static analysis warnings, cyclomatic complexity, duplication %, performance benchmarks, bug count from a fixed review checklist, readability score (rubric).
+* **Consistency:** variance of those scores across sessions; e.g., within-person SD or coefficient of variation (CV).
+* **Time/effort:** wall time, keystrokes/edits, #compiles.
+
+# 2) Run a pilot (8–10 sessions)
+
+Use identical constraints (timebox, prompts, tools). From the pilot, compute:
+
+* Sample SD of the quality metric, $\hat\sigma$.
+* Single-session reliability (optional): ICC or test–retest $r$.
+
+# 3) Choose $n$ to hit your precision target
+
+If you want the **mean quality** to have a 95% CI half-width $m$ (e.g., ±5 points on a 0–100 scale):
+
+$$
+n \;=\; \left(\frac{1.96\,\hat\sigma}{m}\right)^2
+$$
+
+Examples (plug in pilot $\hat\sigma$):
+
+* If $\hat\sigma = 10$ and you want $m=5$: $n \approx (1.96\cdot10/5)^2 \approx 16$.
+* If $\hat\sigma = 15$ and $m=5$: $n \approx 35$.
+
+# 4) If you care about **consistency/reliability**
+
+Estimate single-session reliability $r_{\text{single}}$ (e.g., ICC). Averaging $k$ sessions increases reliability via **Spearman–Brown**:
+
+$$
+r_k \;=\; \frac{k\,r_{\text{single}}}{1 + (k-1)\,r_{\text{single}}}
+$$
+
+Solve for $k$ to reach a target $r_k$ (e.g., 0.80):
+
+$$
+k \;=\; \frac{r_k(1 - r_{\text{single}})}{r_{\text{single}}(1 - r_k)}
+$$
+
+Example: if $r_{\text{single}}=0.5$ and you want $r_k=0.8$, then $k \approx 4$ sessions averaged.
+
+# 5) Heuristics if you can’t pilot first
+
+* **Usable** estimate of mean & variance: **12–16 sessions**.
+* **Tight 95% CI (±5 on a 0–100 scale)** with typical coding-score SDs (10–15): **\~16–35 sessions**.
+* **Very stable reliability (≥0.8) by averaging sessions**: often **3–6** sessions if single-session reliability is moderate (0.4–0.6).
+
+# 6) Practical design tips
+
+* Fix the **timebox**, repo baseline, and **prompt** to reduce extraneous variance.
+* Randomize session order/day to avoid fatigue and learning effects.
+* Lock toolchain/linters; use the **same test suite** each time.
+* Pre-register the metrics & analysis (even in a README) to keep it honest.
+
+If you want, give me one target metric (e.g., “overall quality score 0–100, want ±5 CI”) and your best guess of SD from past runs, and I’ll spit out a concrete $n$ right now.
+
+Yeah — if you frame it as
+
+“We didn’t just build or copy a shell — we validated Kiro’s approach with statistical rigor.”
+
+…that’s instant judge-bait.
+Hackathons love projects that teach something new and use hard data to back it up.
+
+You could position it as:
+
+Project Concept
+
+Implement smallsh both ways:
+
+Your baseline (class assignment style).
+
+Kiro’s structured, enum/struct-heavy design.
+
+Run n repeated coding sessions building the same shell from scratch in each style.
+
+Measure quality, speed, and spec compliance per session.
+
+Apply statistical analysis to see if Kiro’s design yields:
+
+Higher mean quality
+
+Lower variance (more consistent results)
+
+Faster completion times
+
+What Makes It Stand Out
+
+You’re not just showing code — you’re doing empirical software engineering.
+
+Real hypothesis: “Kiro’s design produces more consistent, spec-compliant shells.”
+
+Uses methods from psychometrics (ICC, confidence intervals) in a hackathon setting — unusual and memorable.
+
+Teaches why structured design matters to reliability and accuracy.
+
+Data Storytelling for Judges
+
+On your Devpost/demo:
+
+Show two plots:
+
+Mean vs variance plot (Kiro’s bars smaller & higher).
+
+Learning curve plot (quality vs session number).
+
+Heatmap of spec compliance by run/session.
+
+A big “Statistical significance achieved (p < 0.05)” badge.
+
+How to Make the Numbers Pop
+
+Use automated grading scripts to score each run identically.
+
+Keep all other variables fixed (timebox, prompt, environment).
+
+Show reliability stats:
+
+n, mean, SD, 95% CI for each style.
+
+ICC for repeatability.
+
+Bonus: run a paired t-test (same coder doing both styles).
+
+Tagline for Submission
+
+“Proving software design quality — statistically.
+We show that Kiro’s shell design yields consistent, accurate, and spec-compliant results, every time.”
+
+If you want, I can outline the exact experiment protocol you’d follow so it’s repeatable and judge-proof, with 
+𝑛
+n chosen for enough statistical power to make the claim.
+Do you want me to write that? That’s the kind of thing that will really make this competition entry airtight.

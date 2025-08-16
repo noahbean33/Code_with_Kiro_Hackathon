@@ -1,0 +1,121 @@
+Code with Kiro Hackathon
+A challenge for developers to explore Kiro, an AI IDE that works alongside you to turn ideas into production code with spec-driven development.
+Edit project
+Create project
+Import from portfolio
+Who can participate
+Above legal age of majority in country of residence
+All countries/territories, excluding standard exceptions 
+View full rules
+31 more days to deadline
+View schedule
+
+Deadline
+
+Sep 15, 2025 @ 12:00pm PDT 
+Online
+Public
+$100,000 in cash	10067 participants
+Kiro
+Devpost icon rgb30px
+Managed by Devpost
+Machine Learning/AI Open Ended Beginner Friendly
+REGISTRATION IS CLOSED.
+Due to high demand and a new waitlist to access Kiro, we have capped the number of registrants for the Code with Kiro hackathon at approximately 10,000. 
+We’re excited to see what you build. We’re exploring the possibility of running future hackathons once access has been opened widely. 
+
+
+Welcome to the Code with Kiro Hackathon
+
+Ready to turn your ideas into production-ready code? The Code with Kiro Hackathon challenges you to build something awesome with our new AI-powered IDE that fundamentally changes how developers bring ideas to life. Kiro is built to be your development partner, elevating your work beyond just writing code faster. It works with you throughout your development process - from brainstorming sessions where you sketch out ideas through natural conversation, to architecting robust systems with spec-driven development, all the way to production-ready implementations. With features designed for modern software engineering like inline AI coding, multi-modal chat, agent hooks that can automate all kinds of tasks, and more, Kiro helps you focus on solving the interesting problems while it handles the heavy lifting.
+
+Pick one of our themed tracks or go wild with your own idea. This is your chance to explore how AI-assisted development can transform your entire workflow, from early concept to deployment and beyond. Show us what's possible when you pair your creativity with an IDE that truly understands your development goals. Join us and help shape the future of modern development - where the gap between having an idea and realizing it in production isn't just shorter, but filled with better architecture decisions, cleaner code, and more thoughtful solutions.
+
+Check out the Resources tab for more information!
+
+Requirements
+What to Build
+Build a working software application that uses Kiro and submit it into one of the following categories:
+
+Productivity & Workflow Tools:
+Build tools that save time, reduce friction, or simplify everyday tasks - for developers or anyone else. If it boosts your flow, it fits here. Examples: dev workflow automations, resume helpers, content tools, calendar organizers
+Games & Entertainment:
+Make something expressive, interactive, or just plain fun! Examples: Games, interactive storytelling experiences, visual experiments, etc.
+Educational Apps:
+Build something that helps others learn. Examples: Interactive tutorials, onboarding tools, or AI-enhanced learning platforms, etc.
+Wildcard / Freestyle:
+Doesn’t fit the categories above? This is your category. Build anything with Kiro - we love surprises
+What to Submit
+Include a three (3) minute demonstration video of your submission. Videos must be uploaded to YouTube, Vimeo, or Facebook Video and made public and judges are not required to watch beyond 3 minutes.
+Our judges want to see what you’ve built and how you built it with Kiro.
+The video portion of the Submission should describe to our judges how Kiro was used to create the project. Examples can include: 
+For building and vibe coding from scratch: How did you structure your conversations with Kiro to build your project? What was the most impressive code generation Kiro helped you with?
+For agent hooks: What specific workflows did you automate with Kiro hooks? How did these hooks improve your development process?
+For spec-to-code: How did you structure your spec for Kiro to implement? How did the spec-driven approach improve your development process?
+Your repo must contain the /.kiro directory at the root of the project to show usage of specs, hooks, and steering. Do NOT add the /.kiro directory or sub-folders to your .gitignore, as this could disqualify your submission.
+Provide a URL to your open source code repository for judging and testing. 
+The code repository must be public with an approved OSI Open Source License.
+Identify which project category you are submitting to.
+Include a write up on how Kiro was used.
+Please check the Official Rules for full details.
+
+Prizes
+$100,000 in prizes
+1st Place
+$30,000 in cash
+1 winner
+2nd Place
+$15,000 in cash
+1 winner
+3rd Place
+$10,000 in cash
+1 winner
+Best Productivity & Workflow Tools
+$5,000 in cash
+1 winner
+Best Games & Entertainment
+$5,000 in cash
+1 winner
+Best Educational Apps
+$5,000 in cash
+1 winner
+Best Wildcard / Freestyle
+$5,000 in cash
+1 winner
+Most Innovative Use of Kiro
+$2,000 in cash
+5 winners
+Influencer Judge's Choice
+$1,000 in cash
+4 winners
+Social Blitz Prize
+$200 in cash
+5 winners
+Bonus Blog Prize
+$100 in cash
+100 winners
+Devpost Achievements
+Submitting to this hackathon could earn you:
+
+
+First online hackathon
+
+X Hackathons
+ level 1
+
+Hackathon Winner
+ level 1
+
+Generalist
+Judges
+A panel of qualified judges
+A panel of qualified judges
+will be announced soon!
+
+Judging Criteria
+Potential Value
+Includes the extent to which the solution can be widely useful, easy to use, accessible, etc.
+Implementation
+Includes how well the idea is leveraging Kiro.
+Quality of the Idea
+Includes creativity, originality of the project, such as finding and using unique public datasets, or solving a challenge in a unique way.
