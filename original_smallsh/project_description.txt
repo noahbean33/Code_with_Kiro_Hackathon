@@ -1,8 +1,5 @@
 # Programming Assignment 4: SMALLSH 
 
-**Due** Mar 2 by 11:59pm **Points** 170 **Submitting** an external tool **Available** Feb 10 at 12am - Mar 3 at 11:59pm
-This assignment was locked Mar 3 at 11:59pm.
-
 ## Introduction
 In this assignment you will write your own shell in C called **smallsh**. smallsh will implement a subset of features of well-known shells, such as bash. Your program will
 * Provide a prompt for running commands
